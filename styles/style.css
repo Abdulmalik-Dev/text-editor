@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Estonia", "cursive";
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Zen Antique", serif;
+}
+
+:root {
+  --main-color: #e91e63;
+}
+
+.container {
+  padding: 50px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+.container textarea {
+  width: calc(100% - 20px);
+  height: 250px;
+  border-color: var(--main-color);
+  font-size: 18px;
+  color: var(--main-color);
+  padding: 10px 20px;
+}
+.container textarea:focus {
+  outline: none;
+}
+.container .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.container .buttons button {
+  width: calc(50% - 50px);
+  padding: 6px 0;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+@media (max-width: 450px) {
+  .container .buttons button {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .container .buttons {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.container .resultArea {
+  height: 200px;
+  padding: 10px 20px;
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
